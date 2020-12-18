@@ -80,7 +80,7 @@
 							<div class="col-sm-4">
 								<div class="single-item">
 									<div class="single-item-header">
-										<a href="{{ route('chitietsanpham',$sptt->id)}}"><img src="/source/image/product/{{ $sptt->image }}" alt="" height = 240px></a>
+										<a href="product.html"><img src="/source/image/product/{{ $sptt->image }}" alt="" height = 240px></a>
 									</div>
 									<div class="single-item-body">
 										<p class="single-item-title">{{ $sptt->name }}</p>
