@@ -23,3 +23,11 @@ Route::get('chi-tiet-san-pham/{id}', 'App\Http\Controllers\PageController@getChi
 Route::get('lien-he', 'App\Http\Controllers\PageController@getLienHe')->name('lienhe'); 
 Route::get('gioi-thieu', 'App\Http\Controllers\PageController@getGioiThieu')->name('gioithieu');
 Route::get('add-to-cart/{id}','App\Http\Controllers\PageController@getAddtoCart')->name('themgiohang');
+
+Route::get('dang-ki','App\Http\Controllers\PageController@getSignin')->name('signin');
+Route::post('dang-ki','App\Http\Controllers\PageController@postSignin')->name('signinPost');
+
+Route::get('dang-nhap','App\Http\Controllers\PageController@getLogin')->name('login');
+Route::post('dang-nhap','App\Http\Controllers\PageController@postLognin')->name('loginPost');
+Route::get('dang-xuat','App\Http\Controllers\PageController@postLogout')->name('logout');
+Route::get('search','App\Http\Controllers\PageController@getSearch')->name('search');
